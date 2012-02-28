@@ -1,0 +1,2 @@
+It is a simple server to use the ae library of redis.
+The ae library is a simple event-driven programming library.You can check ae.c and ae.h to know more.
