@@ -3,6 +3,7 @@
  * Released under the BSD license. See the COPYING file for more info. */
 
 #include <sys/epoll.h>
+#include "ae.h"
 
 typedef struct aeApiState {
     int epfd;

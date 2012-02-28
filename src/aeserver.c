@@ -1,10 +1,11 @@
 #include "aeserver.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 aeServer server;
 
 int serverCron(struct aeEventLoop *eventLoop, long long id, void *clientData) {
-    AESERVER_NOTUSED(eveltLoop);
+    AESERVER_NOTUSED(eventLoop);
     AESERVER_NOTUSED(id);
     AESERVER_NOTUSED(clientData);
 
