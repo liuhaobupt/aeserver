@@ -1,2 +1,7 @@
 It is a simple server to use the ae library of redis.
 The ae library is a simple event-driven programming library.You can check ae.c and ae.h to know more.
+
+The files below are from the redis(http://redis.io) project
+1)ae.c,ae.h:    A simple event-driven programming library.
+2)ae_epoll.c:   A epoll wrapper, Linux epoll(2) based ae.c module.
+3)networking.c: A wrapper of socket operations
