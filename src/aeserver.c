@@ -9,7 +9,7 @@ int serverCron(struct aeEventLoop *eventLoop, long long id, void *clientData) {
     AESERVER_NOTUSED(id);
     AESERVER_NOTUSED(clientData);
 
-    //if (!(server.cronloops%100)) 
+    if (!(server.cronloops%100)) 
         fprintf(stderr,"di da di da...\n");
     
     server.cronloops++;
