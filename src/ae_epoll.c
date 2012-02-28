@@ -2,6 +2,7 @@
  * Copyright (C) 2009-2010 Salvatore Sanfilippo - antirez@gmail.com
  * Released under the BSD license. See the COPYING file for more info. */
 
+#include <stdio.h>
 #include <sys/epoll.h>
 #include "ae.h"
 
@@ -80,6 +81,7 @@ static int aeApiPoll(aeEventLoop *eventLoop, struct timeval *tvp) {
 
     retval = epoll_wait(state->epfd,state->events,eventLoop->setsize,
             tvp ? (tvp->tv_sec*1000 + tvp->tv_usec/1000) : -1);
+    
     if (retval > 0) {
         int j;
 
